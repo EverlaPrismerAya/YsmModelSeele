@@ -1,0 +1,88 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"player.pre_main": {
+			"states": {
+				"default": {
+					"animations": ["", ""]
+				}
+			}
+		},
+		"player.post_main": {
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"extraEverlasting1": "variable.killaura"
+						},
+						{
+							"extraEverlasting2": "variable.siegheil"
+						},
+						{
+							"ExtraEverlasting3": "variable.vergil_chair"
+						},
+						{
+							"ExtraEverlasting4": "variable.sin_devil_trigger"
+						},
+						{
+							"ExtraEverlasting5": "variable.wheelchair"
+						},
+						{
+							"ExtraEverlasting6": "variable.everla_fumo"
+						},
+						""
+					]
+				}
+			}
+		},
+		"player.pre_hold": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		},
+		"player.post_hold": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		},
+		"player.pre_use": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		},
+		"player.post_use": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		},
+		"player.pre_swing": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		},
+		"player.post_swing": {
+			"states": {
+				"default": {
+					"sound_effects": [
+						{
+							"effect": ""
+						},
+						{
+							"effect": ""
+						}
+					]
+				}
+			}
+		}
+	}
+}

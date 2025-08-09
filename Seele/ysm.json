@@ -1,0 +1,89 @@
+{
+	"spec": 2,
+	"metadata": {
+		"name": "希儿·死生之律者v0.8.1",
+		"tips": "§9泡沫浮上水面，怒放于金色的晨曦；蝴蝶飞跃深海，栖留在纤柔的指尖。\n§9自“海”中诞生的她，虽将独自前行，但那跨越了“死生”之境的灵魂，已无惧于悄然滋长的“恶芽”。\n§9“海中的魂灵，请聆听生命的旋律！”",
+		"license": {
+			"type": "CC-BY-SA Licence"
+		},
+		"authors": [
+			{
+				"name": "七叶镜绫",
+				"role": "模型/动画/纹理",
+				"avatar": "avatar/Image_1724450217362.png",
+				"comment": "邪道这一块"
+			}
+		]
+	},
+	"properties": {
+		"height_scale": 0.7,
+		"width_scale": 0.7,
+		"extra_animation": {
+			"#extra_dance": "§d跳舞",
+			"#extra_emote": "§b表情",
+			"extra18": "§9切换形态"
+		},
+		"extra_animation_classify": [
+			{
+				"id": "extra_dance",
+				"extra_animation": {
+					"extra0": "跳舞1",
+					"extra6": "跳舞2",
+					"extra7": "跳舞3"
+				}
+			},
+			{
+				"id": "extra_emote",
+				"extra_animation": {
+					"extra1": "打招呼",
+					"extra2": "鼓掌",
+					"extra3": "同意",
+					"extra4": "反对",
+					"extra5": "加油"
+				}
+			},
+			{
+				"id": "return",
+				"extra_animation": {}
+			}
+		],
+		"preview_animation": "menu",
+		"default_texture": "default",
+		"render_layers_first": false,
+		"free": true,
+		"disable_preview_rotation": true,
+		"all_cutout": false
+	},
+	"files": {
+		"player": {
+			"model": {
+				"main": "models/main.json",
+				"arm": "models/arm.json"
+			},
+			"animation": {
+				"main": "animations/main.animation.json",
+				"arm": "animations/arm.animation.json",
+				"extra": "animations/extra.animation.json",
+				"tac": "animations/tac.animation.json",
+				"carryon": "animations/carryon.animation.json",
+				"parcool": "animations/parcool.animation.json",
+				"swem": "animations/swem.animation.json",
+				"slashblade": "animations/slashblade.animation.json",
+				"tlm": "animations/tlm.animation.json"
+			},
+			"animation_controllers": ["controller/main.animation_controllers.json"],
+			"texture": [
+				{
+					"uv": "textures/default.png"
+				}
+			]
+		},
+		"arrow": {
+			"model": "models/arrow.json",
+			"animation": "animations/arrow.animation.json",
+			"texture": {
+				"uv": "textures/arrow.png"
+			}
+		}
+	}
+}
