@@ -1,37 +1,10 @@
 {
 	"format_version": "1.19.0",
 	"animation_controllers": {
-		"player.pre_main": {
+		"player.parallel_0": {
 			"states": {
 				"default": {
-					"animations": ["", ""]
-				}
-			}
-		},
-		"player.post_main": {
-			"states": {
-				"default": {
-					"animations": [
-						{
-							"extraEverlasting1": "variable.killaura"
-						},
-						{
-							"extraEverlasting2": "variable.siegheil"
-						},
-						{
-							"ExtraEverlasting3": "variable.vergil_chair"
-						},
-						{
-							"ExtraEverlasting4": "variable.sin_devil_trigger"
-						},
-						{
-							"ExtraEverlasting5": "variable.wheelchair"
-						},
-						{
-							"ExtraEverlasting6": "variable.everla_fumo"
-						},
-						""
-					]
+					"animations": ["parallel0", "parallel1", "parallel2", "parallel3", "parallel4", "parallel5", "parallel6", "parallel7"]
 				}
 			}
 		},

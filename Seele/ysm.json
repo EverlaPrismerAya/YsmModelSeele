@@ -1,10 +1,10 @@
 {
 	"spec": 2,
 	"metadata": {
-		"name": "希儿·死生之律者v0.8.1",
+		"name": "希儿·死生之律者v1.0",
 		"tips": "§9泡沫浮上水面，怒放于金色的晨曦；蝴蝶飞跃深海，栖留在纤柔的指尖。\n§9自“海”中诞生的她，虽将独自前行，但那跨越了“死生”之境的灵魂，已无惧于悄然滋长的“恶芽”。\n§9“海中的魂灵，请聆听生命的旋律！”",
 		"license": {
-			"type": "CC-BY-SA Licence"
+			"type": "CC BY-SA 4.0 Licence"
 		},
 		"authors": [
 			{
@@ -71,7 +71,7 @@
 				"slashblade": "animations/slashblade.animation.json",
 				"tlm": "animations/tlm.animation.json"
 			},
-			"animation_controllers": ["controller/main.animation_controllers.json"],
+			"animation_controllers": ["controller/main.animation_controllers.json", "controller/parallel_controllers.json"],
 			"texture": [
 				{
 					"uv": "textures/default.png"
