@@ -21,7 +21,8 @@
 		"extra_animation": {
 			"#extra_dance": "§d跳舞",
 			"#extra_emote": "§b表情",
-			"extra18": "§9切换形态"
+			"extra18": "§9切换形态",
+			"extra19": "#codeplate"
 		},
 		"extra_animation_classify": [
 			{
@@ -52,7 +53,39 @@
 		"render_layers_first": false,
 		"free": true,
 		"disable_preview_rotation": true,
-		"all_cutout": false
+		"all_cutout": false,
+		"extra_animation_buttons": [
+			{
+				"id": "codeplate",
+				"name": "§3神秘面板",
+				"config_forms": [
+					{
+						"type": "checkbox",
+						"title": "确认输入",
+						"description": "输入密码后点击确认",
+						"value": "v.roaming.unlock"
+					},
+					{
+						"type": "range",
+						"title": "选择前两位密码",
+						"description": "将滑条调整到对应的数值",
+						"value": "v.roaming.code_pre",
+						"step": 100,
+						"min": 0,
+						"max": 9900
+					},
+					{
+						"type": "range",
+						"title": "选择后两位密码",
+						"description": "将滑条调整到对应的数值",
+						"value": "v.roaming.code_post",
+						"step": 1,
+						"min": 0,
+						"max": 99
+					}
+				]
+			}
+		]
 	},
 	"files": {
 		"player": {

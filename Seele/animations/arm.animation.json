@@ -1879,7 +1879,7 @@
 				"RightHandLocator": {
 					"scale": 0
 				},
-				"EffectsStars": {
+				"ysmGlowEffectsStars": {
 					"scale": {
 						"0.0833": {
 							"pre": [1, 1, 1],
@@ -1899,7 +1899,7 @@
 			},
 			"sound_effects": {
 				"0.0": {
-					"effect": "minecraft:item.trident.throw"
+					"effect": "scythe_swing_normal"
 				}
 			}
 		},
@@ -2247,7 +2247,7 @@
 				"RightHandLocator": {
 					"scale": 0
 				},
-				"EffectsStars": {
+				"ysmGlowEffectsStars": {
 					"scale": {
 						"0.0833": {
 							"pre": [1, 1, 1],
@@ -2267,7 +2267,7 @@
 			},
 			"sound_effects": {
 				"0.0": {
-					"effect": "minecraft:item.trident.throw"
+					"effect": "scythe_swing_normal"
 				}
 			}
 		},
@@ -2607,7 +2607,7 @@
 				"RightHandLocator": {
 					"scale": 0
 				},
-				"EffectsStars": {
+				"ysmGlowEffectsStars": {
 					"scale": {
 						"0.1667": {
 							"pre": [1, 1, 1],
@@ -2627,7 +2627,7 @@
 			},
 			"sound_effects": {
 				"0.0": {
-					"effect": "minecraft:item.trident.throw"
+					"effect": "scythe_swing_cyclone"
 				}
 			}
 		},
@@ -3231,7 +3231,7 @@
 				"RightHandLocator": {
 					"scale": 0
 				},
-				"EffectsStars": {
+				"ysmGlowEffectsStars": {
 					"scale": {
 						"0.0833": {
 							"pre": [1, 1, 1],
@@ -3251,7 +3251,7 @@
 			},
 			"sound_effects": {
 				"0.0": {
-					"effect": "minecraft:item.trident.throw"
+					"effect": "scythe_swing_normal"
 				}
 			}
 		},
@@ -3853,7 +3853,7 @@
 				"RightHandLocator": {
 					"scale": 0
 				},
-				"EffectsStars": {
+				"ysmGlowEffectsStars": {
 					"scale": {
 						"0.0833": {
 							"pre": [1, 1, 1],
@@ -3873,7 +3873,7 @@
 			},
 			"sound_effects": {
 				"0.0": {
-					"effect": "minecraft:item.trident.throw"
+					"effect": "scythe_swing_normal"
 				}
 			}
 		},
@@ -4487,7 +4487,7 @@
 				"RightHandLocator": {
 					"scale": 0
 				},
-				"EffectsStars": {
+				"ysmGlowEffectsStars": {
 					"scale": {
 						"0.1667": {
 							"pre": [1, 1, 1],
@@ -4507,7 +4507,7 @@
 			},
 			"sound_effects": {
 				"0.0": {
-					"effect": "minecraft:item.trident.throw"
+					"effect": "scythe_swing_cyclone"
 				}
 			}
 		},
@@ -4960,7 +4960,7 @@
 						}
 					}
 				},
-				"EffectsStars": {
+				"ysmGlowEffectsStars": {
 					"scale": {
 						"0.125": {
 							"pre": [1, 1, 1],
@@ -4980,7 +4980,7 @@
 			},
 			"sound_effects": {
 				"0.0": {
-					"effect": "minecraft:item.trident.throw"
+					"effect": "scythe_swing_normal"
 				}
 			}
 		},
@@ -5106,7 +5106,7 @@
 				"RightArm": {
 					"rotation": {
 						"0.0": [0, 0, 0],
-						"0.375": [-86.54244, 14.04704, 5.92746]
+						"0.375": ["-86.54244-0.5*ysm.head_pitch", "14.04704-ysm.head_yaw", 5.92746]
 					}
 				},
 				"RightForeArm": {
@@ -5162,10 +5162,13 @@
 				},
 				"ysmGlowOrbTop": {
 					"scale": {
-						"0.2917": [1, 1, 1],
+						"0.0": [1, 1, 1],
 						"0.7083": ["1+math.random(-0.1,0.1)", "1+math.random(-0.1,0.1)", "1+math.random(-0.1,0.1)"],
 						"1.1667": ["1+math.random(0.1,0.2)", "1+math.random(0.1,0.2)", "1+math.random(0.1,0.2)"]
 					}
+				},
+				"Arm": {
+					"rotation": [0, 0, 0]
 				}
 			}
 		},
@@ -5233,7 +5236,7 @@
 				},
 				"ysmGlowOrbTop": {
 					"scale": {
-						"0.3": [1, 1, 1],
+						"0.0": [1, 1, 1],
 						"0.7": ["1+math.random(-0.1,0.1)", "1+math.random(-0.1,0.1)", "1+math.random(-0.1,0.1)"],
 						"1.2": ["1+math.random(0.1,0.2)", "1+math.random(0.1,0.2)", "1+math.random(0.1,0.2)"]
 					}
@@ -5310,6 +5313,60 @@
 				}
 			}
 		},
+		"swing:shield": {
+			"animation_length": 0.375,
+			"bones": {
+				"RightArm": {
+					"rotation": {
+						"0.0": {
+							"post": [10, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.0833": {
+							"post": [10, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.1667": {
+							"post": [-40, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.375": {
+							"post": [10, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"RightForeArm": {
+					"rotation": {
+						"0.0": {
+							"post": [-92.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.0833": {
+							"post": [-92.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.1667": {
+							"post": [-48.2367, -15.18892, -13.16783],
+							"lerp_mode": "catmullrom"
+						},
+						"0.375": {
+							"post": [-92.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"RightHandLocator": {
+					"scale": 0
+				},
+				"Orb": {
+					"scale": 1
+				},
+				"ysmGlowBorderOuter3": {
+					"scale": 1
+				}
+			}
+		},
 		"hold_mainhand:shield": {
 			"loop": true,
 			"animation_length": 1000,
@@ -5366,6 +5423,19 @@
 						"0.9167": [-92.34531, -1.14858, 0],
 						"1.0417": [-92.5, 0, 0]
 					}
+				},
+				"RightHandLocator": {
+					"scale": 0
+				},
+				"ysmGlowBorderOuter3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1000.0": [0, -28800, 0]
+					},
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.625": [1, 1, 1]
+					}
 				}
 			}
 		},
@@ -5421,7 +5491,8 @@
 					"position": {
 						"0.0": [0, 0, 0],
 						"0.125": [-1.03, -0.13, -0.64]
-					}
+					},
+					"scale": 0
 				},
 				"Head": {
 					"rotation": {
@@ -5526,6 +5597,58 @@
 						"0.5": [1.6675, "-27.448-ysm.head_yaw", -5.46571],
 						"0.75": [1.6675, "-27.448-ysm.head_yaw", -5.46571]
 					}
+				},
+				"Border": {
+					"rotation": ["-0.5*ysm.head_pitch", 0, 0],
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.2917": [1, 1, 1]
+					}
+				},
+				"ysmGlowBorderCenter": {
+					"rotation": [1.6675, "-ysm.head_yaw", -5.46571]
+				},
+				"ysmGlowBorderL1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"60.0": [0, 0, -1440]
+					},
+					"scale": {
+						"0.2083": [0, 0, 0],
+						"0.4583": [1, 1, 1]
+					}
+				},
+				"ysmGlowBorderL2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"60.0": [0, 0, 1440]
+					},
+					"scale": {
+						"0.2083": [0, 0, 0],
+						"0.4583": [1, 1, 1]
+					}
+				},
+				"ysmGlowBorderL3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"60.0": [0, 0, -1440]
+					},
+					"scale": {
+						"0.2083": [0, 0, 0],
+						"0.4167": [1, 1, 1]
+					}
+				},
+				"ysmGlowBorderOuter": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"60.0": [0, 0, 1440]
+					}
+				},
+				"ysmGlowBorderOuter3": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.4583": [0, 0, 0]
+					}
 				}
 			}
 		},
@@ -5584,6 +5707,19 @@
 						"0.9167": [-92.34531, 1.14858, 0],
 						"1.0417": [-92.5, 0, 0]
 					}
+				},
+				"LeftHandLocator": {
+					"scale": 0
+				},
+				"ysmGlowBorderOuter2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1000.0": [0, 0, 28800]
+					},
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.625": [1, 1, 1]
+					}
 				}
 			}
 		},
@@ -5639,7 +5775,8 @@
 					"position": {
 						"0.0": [0, 0, 0],
 						"0.125": [1.03, -0.13, -0.64]
-					}
+					},
+					"scale": 0
 				},
 				"Head": {
 					"rotation": {
@@ -5743,6 +5880,58 @@
 						},
 						"0.5": ["ysm.head_pitch>0?-0.5*ysm.head_pitch:0.2*ysm.head_pitch", 0, 0],
 						"0.75": ["ysm.head_pitch>0?-0.5*ysm.head_pitch:0.2*ysm.head_pitch", 0, 0]
+					}
+				},
+				"Border": {
+					"rotation": ["-0.5*ysm.head_pitch", 0, 0],
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.2917": [1, 1, 1]
+					}
+				},
+				"ysmGlowBorderCenter": {
+					"rotation": [1.6675, "-ysm.head_yaw", -5.46571]
+				},
+				"ysmGlowBorderL1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"60.0": [0, 0, -1440]
+					},
+					"scale": {
+						"0.2083": [0, 0, 0],
+						"0.4583": [1, 1, 1]
+					}
+				},
+				"ysmGlowBorderL2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"60.0": [0, 0, 1440]
+					},
+					"scale": {
+						"0.2083": [0, 0, 0],
+						"0.4583": [1, 1, 1]
+					}
+				},
+				"ysmGlowBorderL3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"60.0": [0, 0, -1440]
+					},
+					"scale": {
+						"0.2083": [0, 0, 0],
+						"0.4167": [1, 1, 1]
+					}
+				},
+				"ysmGlowBorderOuter": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"60.0": [0, 0, 1440]
+					}
+				},
+				"ysmGlowBorderOuter2": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.4583": [0, 0, 0]
 					}
 				}
 			}
@@ -10117,7 +10306,7 @@
 					"rotation": ["-12.5-170*(query.vertical_speed<=-1)", 0, "35*(query.vertical_speed<=-1)"]
 				},
 				"LeftForeArm": {
-					"rotation": [-17.35932, 2.24944, "7.1565+35*(query.vertical_speed<=-1)"]
+					"rotation": [-17.35932, 2.24944, "7.1565+22.5*(query.vertical_speed<=-1)"]
 				},
 				"RightArm": {
 					"rotation": ["-10-167.8911351131*(query.vertical_speed<=-1)", "1.3429457963*(query.vertical_speed<=-1)", "-32.4752814198*(query.vertical_speed<=-1)"]
@@ -10138,7 +10327,7 @@
 					"rotation": ["-12.5-170*(query.vertical_speed<=-1)", 0, "35*(query.vertical_speed<=-1)"]
 				},
 				"LeftForeArm": {
-					"rotation": [-17.35932, 2.24944, "7.1565+35*(query.vertical_speed<=-1)"]
+					"rotation": [-17.35932, 2.24944, "7.1565+22.5*(query.vertical_speed<=-1)"]
 				},
 				"RightArm": {
 					"rotation": ["-10-167.8911351131*(query.vertical_speed<=-1)", "1.3429457963*(query.vertical_speed<=-1)", "-32.4752814198*(query.vertical_speed<=-1)"]
@@ -10160,7 +10349,7 @@
 					"rotation": ["-12.5-170*(query.vertical_speed<=-1)", 0, "35*(query.vertical_speed<=-1)"]
 				},
 				"LeftForeArm": {
-					"rotation": [-17.35932, 2.24944, "7.1565+35*(query.vertical_speed<=-1)"]
+					"rotation": [-17.35932, 2.24944, "7.1565+22.5*(query.vertical_speed<=-1)"]
 				},
 				"RightArm": {
 					"rotation": ["-10-167.8911351131*(query.vertical_speed<=-1)", "1.3429457963*(query.vertical_speed<=-1)", "-32.4752814198*(query.vertical_speed<=-1)"]
@@ -10199,7 +10388,7 @@
 					"rotation": ["-12.5-170*(query.vertical_speed<=-1)", 0, "35*(query.vertical_speed<=-1)"]
 				},
 				"LeftForeArm": {
-					"rotation": [-17.35932, 2.24944, "7.1565+35*(query.vertical_speed<=-1)"]
+					"rotation": [-17.35932, 2.24944, "7.1565+22.5*(query.vertical_speed<=-1)"]
 				},
 				"RightArm": {
 					"rotation": ["-10-167.8911351131*(query.vertical_speed<=-1)", "1.3429457963*(query.vertical_speed<=-1)", "-32.4752814198*(query.vertical_speed<=-1)"]

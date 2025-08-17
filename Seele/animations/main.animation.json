@@ -438,10 +438,10 @@
 					"rotation": [-27.47766, -1.15408, -2.21783]
 				},
 				"RightArm": {
-					"rotation": [-15, 0, 0]
+					"rotation": [0, 0, 0]
 				},
 				"RightForeArm": {
-					"rotation": [-87.45708, -7.4713, -0.6574]
+					"rotation": [-4.95708, -7.4713, -0.6574]
 				},
 				"LeftLeg": {
 					"rotation": [9.96271, 0.86717, 5.07558]
@@ -455,7 +455,7 @@
 					"scale": 1.5
 				},
 				"AllHead": {
-					"rotation": [0, 22.5, 0],
+					"rotation": [0, 7.5, 0],
 					"position": [0, 0, 0],
 					"scale": 1
 				},
@@ -509,8 +509,7 @@
 					"scale": 0
 				},
 				"ysmGlowCornflower": {
-					"rotation": [0, 0, 215],
-					"scale": 0.5
+					"scale": 0
 				}
 			}
 		},
@@ -525,10 +524,36 @@
 					"rotation": [-27.47766, -1.15408, -2.21783]
 				},
 				"RightArm": {
-					"rotation": [-15, 0, 0]
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.25": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.6667": {
+							"post": [-15, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
 				},
 				"RightForeArm": {
-					"rotation": [-87.45708, -7.4713, -0.6574]
+					"rotation": {
+						"0.0": {
+							"post": [-4.95708, -7.4713, -0.6574],
+							"lerp_mode": "catmullrom"
+						},
+						"0.25": {
+							"post": [-4.95708, -7.4713, -0.6574],
+							"lerp_mode": "catmullrom"
+						},
+						"0.6667": {
+							"post": [-87.45708, -7.4713, -0.6574],
+							"lerp_mode": "catmullrom"
+						}
+					}
 				},
 				"LeftLeg": {
 					"rotation": [9.96271, 0.86717, 5.07558]
@@ -542,9 +567,18 @@
 					"scale": 1.5
 				},
 				"AllHead": {
-					"rotation": [0, 22.5, 0],
-					"position": [0, 0, 0],
-					"scale": 1
+					"rotation": {
+						"0.0": [0, 7.5, 0],
+						"0.25": [0, 22.5, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.25": [1, 1, 1]
+					}
 				},
 				"UpperBodyReal": {
 					"rotation": [0, -5, 0]
@@ -596,8 +630,27 @@
 					"scale": 0
 				},
 				"ysmGlowCornflower": {
-					"rotation": [0, 0, 215],
-					"scale": 0.5
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 215],
+							"lerp_mode": "catmullrom"
+						},
+						"0.25": {
+							"post": [0, 0, 215],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"scale": {
+						"0.3333": {
+							"pre": [0, 0, 0],
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.6667": {
+							"post": [0.5, 0.5, 0.5],
+							"lerp_mode": "catmullrom"
+						}
+					}
 				}
 			}
 		},
@@ -612,10 +665,36 @@
 					"rotation": [-27.47766, -1.15408, -2.21783]
 				},
 				"RightArm": {
-					"rotation": [-15, 0, 0]
+					"rotation": {
+						"0.0": {
+							"post": [-15, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.375": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5833": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
 				},
 				"RightForeArm": {
-					"rotation": [-87.45708, -7.4713, -0.6574]
+					"rotation": {
+						"0.0": {
+							"post": [-87.45708, -7.4713, -0.6574],
+							"lerp_mode": "catmullrom"
+						},
+						"0.375": {
+							"post": [-4.95708, -7.4713, -0.6574],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5833": {
+							"post": [-4.95708, -7.4713, -0.6574],
+							"lerp_mode": "catmullrom"
+						}
+					}
 				},
 				"LeftLeg": {
 					"rotation": [9.96271, 0.86717, 5.07558]
@@ -629,9 +708,18 @@
 					"scale": 1.5
 				},
 				"AllHead": {
-					"rotation": [0, 22.5, 0],
-					"position": [0, 0, 0],
-					"scale": 1
+					"rotation": {
+						"0.375": [0, 22.5, 0],
+						"0.5833": [0, 7.5, 0]
+					},
+					"position": {
+						"0.375": [0, 0, 0],
+						"0.5833": [0, 0, 0]
+					},
+					"scale": {
+						"0.375": [1, 1, 1],
+						"0.5833": [1, 1, 1]
+					}
 				},
 				"UpperBodyReal": {
 					"rotation": [0, -5, 0]
@@ -683,8 +771,27 @@
 					"scale": 0
 				},
 				"ysmGlowCornflower": {
-					"rotation": [0, 0, 215],
-					"scale": 0.5
+					"rotation": {
+						"0.375": {
+							"pre": [0, 0, 215],
+							"post": [0, 0, 215],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5833": {
+							"post": [0, 0, 215],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"scale": {
+						"0.0": {
+							"post": [0.5, 0.5, 0.5],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2917": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
 				}
 			}
 		},
@@ -14664,6 +14771,44 @@
 		"parallel1": {
 			"loop": true,
 			"animation_length": 0.0169,
+			"bones": {
+				"LowerDressExMachina": {
+					"scale": "(v.roaming.unlock==1)*(v.roaming.code_pre==2500)*(v.roaming.code_post==12)"
+				},
+				"ysmGlowScytheEffectsNormal": {
+					"scale": "1-(v.roaming.unlock==1)*(v.roaming.code_pre==2500)*(v.roaming.code_post==12)"
+				},
+				"ysmGlowEffectsStarsNormal": {
+					"scale": "1-(v.roaming.unlock==1)*(v.roaming.code_pre==2500)*(v.roaming.code_post==12)"
+				},
+				"ysmGlowEffectsStarsExMachina": {
+					"scale": "(v.roaming.unlock==1)*(v.roaming.code_pre==2500)*(v.roaming.code_post==12)"
+				},
+				"ysmGlowScytheEffectsExMachina": {
+					"scale": "(v.roaming.unlock==1)*(v.roaming.code_pre==2500)*(v.roaming.code_post==12)"
+				},
+				"LeftHairPinExMachina": {
+					"scale": "(v.roaming.unlock==1)*(v.roaming.code_pre==2500)*(v.roaming.code_post==12)"
+				},
+				"shoulderNormalOverlay": {
+					"scale": "1-(v.roaming.unlock==1)*(v.roaming.code_pre==2500)*(v.roaming.code_post==12)"
+				},
+				"shoulderExMachinaOverlay": {
+					"scale": "(v.roaming.unlock==1)*(v.roaming.code_pre==2500)*(v.roaming.code_post==12)"
+				},
+				"LeftArmRealOverlay": {
+					"scale": "1-(v.roaming.unlock==1)*(v.roaming.code_pre==2500)*(v.roaming.code_post==12)"
+				},
+				"LeftArmExMachinaOverlay": {
+					"scale": "(v.roaming.unlock==1)*(v.roaming.code_pre==2500)*(v.roaming.code_post==12)"
+				},
+				"RightArmRealOverlay": {
+					"scale": "1-(v.roaming.unlock==1)*(v.roaming.code_pre==2500)*(v.roaming.code_post==12)"
+				},
+				"RightArmExMachinaOverlay": {
+					"scale": "(v.roaming.unlock==1)*(v.roaming.code_pre==2500)*(v.roaming.code_post==12)"
+				}
+			},
 			"timeline": {
 				"0.0": [
 					"'头发防穿模、垂直、水平、角速度物理四合一模块';",
@@ -15062,7 +15207,16 @@
 			}
 		},
 		"parallel6": {
-			"loop": "hold_on_last_frame"
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"Orb": {
+					"rotation": [
+						"-0.5*ysm.head_pitch-3*(math.sin(query.anim_time*360*0.18 + 40) + math.sin(2*query.anim_time*360*0.21 + 40))",
+						"-0.5*ysm.head_yaw",
+						"-3*(math.sin(query.anim_time*360*0.42 + 40) + math.sin(2*query.anim_time*360*0.13 + 40))"
+					]
+				}
+			}
 		},
 		"pre_parallel0": {
 			"loop": true,
@@ -15202,6 +15356,15 @@
 					"scale": 0
 				},
 				"ysmGlowCornflower": {
+					"scale": 0
+				},
+				"Border": {
+					"scale": 0
+				},
+				"ysmGlowBorderOuter2": {
+					"scale": 0
+				},
+				"ysmGlowBorderOuter3": {
 					"scale": 0
 				}
 			}
@@ -15552,6 +15715,34 @@
 				"BackRightLowerDressL4": {
 					"rotation": [
 						"ysm.bone_rot('LongHair_BackL2').x*(1-ctrl.elytra_fly)",
+						0,
+						"0.5*v.MHair_ya0+3*(math.sin(query.anim_time*360*0.25 + 40) + math.sin(2*query.anim_time*360*0.36 + 40))"
+					]
+				},
+				"RightLowerDressExMachina": {
+					"rotation": [
+						"math.clamp(math.clamp(v.NewHairSimulator_Pa0,0,50)/2+10*ctrl.elytra_fly, -10,30)+1*(math.sin(query.anim_time*360*0.25 + 40) + math.sin(2*query.anim_time*360*0.36 + 40))",
+						0,
+						"0.5*v.MHair_ya0+3*(math.sin(query.anim_time*360*0.25 + 40) + math.sin(2*query.anim_time*360*0.36 + 40))"
+					]
+				},
+				"BackRightLowerDressL9": {
+					"rotation": [
+						"math.clamp(v.HairDelta_Pa0/12*(1-ctrl.elytra_fly)-20*ctrl.elytra_fly,-15,60)",
+						0,
+						"0.5*v.MHair_ya0+3*(math.sin(query.anim_time*360*0.25 + 40) + math.sin(2*query.anim_time*360*0.36 + 40))"
+					]
+				},
+				"LeftLowerDressExMachina": {
+					"rotation": [
+						"math.clamp(math.clamp(v.NewHairSimulator_Pa0,0,50)/2+10*ctrl.elytra_fly, -10,30)+1*(math.sin(query.anim_time*360*0.25 + 40) + math.sin(2*query.anim_time*360*0.36 + 40))",
+						0,
+						"0.5*v.MHair_ya0+3*(math.sin(query.anim_time*360*0.25 + 40) + math.sin(2*query.anim_time*360*0.36 + 40))"
+					]
+				},
+				"BackLeftLowerDressL9": {
+					"rotation": [
+						"math.clamp(v.HairDelta_Pa0/12*(1-ctrl.elytra_fly)-20*ctrl.elytra_fly,-15,60)",
 						0,
 						"0.5*v.MHair_ya0+3*(math.sin(query.anim_time*360*0.25 + 40) + math.sin(2*query.anim_time*360*0.36 + 40))"
 					]
