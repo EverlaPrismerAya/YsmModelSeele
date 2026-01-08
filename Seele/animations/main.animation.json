@@ -15248,8 +15248,8 @@
 					],
 					"scale": [
 						"1-0.002*(ysm.second_order('胸部垂直', math.clamp(q.vertical_speed,-30,30), 3, 0.3, 0)+ysm.second_order('胸部水平', math.clamp(q.ground_speed,0,20), 2, 0.5, 1))",
-						"1+0.005*(ysm.second_order('胸部垂直', math.clamp(q.vertical_speed,-30,30), 3, 0.3, 0)+ysm.second_order('胸部水平', math.clamp(q.ground_speed+v.bg,0,20), 2, 0.5, 1))",
-						"1-0.008*(ysm.second_order('胸部垂直', math.clamp(q.vertical_speed,-30,30), 3, 0.3, 0)+ysm.second_order('胸部水平', math.clamp(q.ground_speed+v.bg,0,20), 2, 0.5, 1))"
+						"1+0.005*(ysm.second_order('胸部垂直', math.clamp(q.vertical_speed,-30,30), 3, 0.3, 0)+ysm.second_order('胸部水平', math.clamp(q.ground_speed,0,20), 2, 0.5, 1))",
+						"1-0.008*(ysm.second_order('胸部垂直', math.clamp(q.vertical_speed,-30,30), 3, 0.3, 0)+ysm.second_order('胸部水平', math.clamp(q.ground_speed,0,20), 2, 0.5, 1))"
 					]
 				},
 				"molang": {
